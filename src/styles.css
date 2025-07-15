@@ -13,3 +13,13 @@ body {
     margin: 0;
     font-family: Roboto, "Helvetica Neue", sans-serif;
 }
+
+.center_text {
+    display: flex;
+    width: 100%;
+    text-align: center;
+    justify-content: flex-start;
+    align-items: center;
+    color: #3b4ea0;
+    padding-left: 60px;
+}

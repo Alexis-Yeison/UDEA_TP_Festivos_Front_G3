@@ -1,1 +1,41 @@
 @import url('https://fonts.googleapis.com/css2?family=Outfit:wght@600&display=swap');
+
+.primary {
+    background: #dddddd;
+    font-family: "Outfit", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 600;
+    font-style: normal;
+    font-size: 2em;
+}
+
+.blue,
+.red {
+    height: 100%;
+    width: 6vw;
+    clip-path: polygon(25% 0%, 100% 0%, 75% 100%, 0% 100%);
+}
+
+.yellow {
+    width: 8vw;
+    z-index: 3;
+    height: 100%;
+    background: #FFCD00;
+    clip-path: polygon(18% 0%, 100% 0%, 82% 100%, 0% 100%);
+}
+
+.blue {
+    background: #003087;
+    z-index: 2;
+}
+
+.red {
+    background: #C8102E;
+    z-index: 1;
+}
+
+.yellow,
+.blue,
+.red {
+    margin-left: -25px;
+}
