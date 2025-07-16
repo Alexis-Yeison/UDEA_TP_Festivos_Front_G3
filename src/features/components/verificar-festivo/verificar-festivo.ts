@@ -2,12 +2,14 @@ import { Component } from '@angular/core';
 import { FormsModule } from '@angular/forms';
 import { ReferenciasMaterialModule } from '../../../shared/modules/referencias-material.module';
 import { FestivoService } from '../../../core/services/festivo-service';
+import { RouterModule } from '@angular/router';
 
 @Component({
   selector: 'app-verificar-festivo',
   imports: [
     FormsModule,
-    ReferenciasMaterialModule
+    ReferenciasMaterialModule,
+    RouterModule
   ],
   templateUrl: './verificar-festivo.html',
   styleUrl: './verificar-festivo.css'

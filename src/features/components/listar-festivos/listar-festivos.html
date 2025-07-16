@@ -1,1 +1,22 @@
-<p>listar-festivos works!</p>
+<mat-toolbar class="primary">
+    <div class="center">
+        Listar festivos del año
+    </div>
+</mat-toolbar>
+<div style="padding: 1rem;" class="elements">
+    <mat-form-field appearance="fill">
+        <mat-label>Ingresa un año</mat-label>
+        <input matInput type="number" [(ngModel)]="year" />
+    </mat-form-field>
+    <button mat-raised-button color="accent" (click)="listarFestivos()">
+        Listar Festivos
+    </button>
+    <button mat-raised-button color="primary" [routerLink]="['/verificar-festivo']">
+        Ir a verificar festivo
+    </button>
+</div>
+<div style="margin: 1rem;">
+    <ngx-datatable class="material" [rows]="festivos" [columns]="columnas" [columnMode]="modoColumna.force"
+        [headerHeight]="50" [footerHeight]="50" [rowHeight]="'auto'" [limit]="10">
+    </ngx-datatable>
+</div>
